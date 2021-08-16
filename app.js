@@ -82,33 +82,65 @@ console.log(double);
 //   }
 // ];
 
-var database = [
-  {
-    username: "ducthanhpr",
-    password: "123"
-  }
+// var database = [
+//   {
+//     username: "ducthanhpr",
+//     password: "123"
+//   }
+// ];
+// var newsFeed = [
+//   {
+//     username: "aldfjksdfjl",
+//     timeline: "So tired form all that learn"
+//   },
+//   {
+//     username: "safkladfsdkfkf",
+//     timeline: "Javascript is so coolll"
+//   }
+// ];
+
+// var userNamePrompt = prompt("What's your username?");
+// var passwordPrompt = prompt("What's your password?");
+
+// function signIn (user, pass) {
+//   if (user === database[0].username && pass === database[0].password) {
+//     console.log(newsFeed);
+//   }
+//   else {
+//     alert ("Sorry, wrong username and password");
+//   }
+// }
+// signIn(userNamePrompt, passwordPrompt);
+
+//vong lap for
+var todos = [
+  "clear room",
+  "brush teeth!",
+  "excercise",
+  "study javascript",
+  "eat healthy!"
 ];
-var newsFeed = [
-  {
-    username: "aldfjksdfjl",
-    timeline: "So tired form all that learn"
-  },
-  {
-    username: "safkladfsdkfkf",
-    timeline: "Javascript is so coolll"
-  }
-];
 
-var userNamePrompt = prompt("What's your username?");
-var passwordPrompt = prompt("What's your password?");
+// for (var i = 0; i < todos.length; i++) {
+//   console.log(todos[i] + "!");
+// }
 
-function signIn (user, pass) {
-  if (user === database[0].username && pass === database[0].password) {
-    console.log(newsFeed);
-  }
-  else {
-    alert ("Sorry, wrong username and password");
-  }
-}
-signIn(userNamePrompt, passwordPrompt);
+//loop while
+// var count = 0;
+// while (count < 10) {
+//   console.log(count);
+//   count++;
+// }
 
+//loop do white 
+// var count = 10
+// do {
+//   console.log(count);
+//   count--
+// } while (count > 0);
+
+//loop foreach 
+todos.forEach(function(todo, i,b){
+  
+  console.log("Work to do on weekeen:",todo,i);
+})
