@@ -61,6 +61,8 @@ console.log(double);
 
 // var listanimal = ["tiger", "cat", "bear", "bird"];
 
+
+//built facebook 
 // const user = {
 //   name: "Soccer",
 //   age: 34,
@@ -113,14 +115,21 @@ console.log(double);
 // signIn(userNamePrompt, passwordPrompt);
 
 //vong lap for
-var todos = [
-  "clear room",
-  "brush teeth!",
-  "excercise",
-  "study javascript",
-  "eat healthy!"
-];
+// var todos = [
+//   "clear room",
+//   "brush teeth!",
+//   "excercise",
+//   "study javascript",
+//   "eat healthy!"
+// ];
 
+// var todosimportant = [
+//   "clear room",
+//   "brush teeth!",
+//   "excercise",
+//   "study javascript",
+//   "eat healthy!"
+// ];
 // for (var i = 0; i < todos.length; i++) {
 //   console.log(todos[i] + "!");
 // }
@@ -140,7 +149,64 @@ var todos = [
 // } while (count > 0);
 
 //loop foreach 
-todos.forEach(function(todo, i,b){
+// todos.forEach(function(todo, i,b){
   
-  console.log("Work to do on weekeen:",todo,i);
-})
+//   console.log("Work to do on weekeend:",todo,i);
+// })
+
+// function logToDos (todo, i) {
+//   console.log(todo, i);
+// }
+
+// todos.forEach(logToDos);
+// todosimportant.forEach(logToDos);
+
+var database = [
+  {
+    username: "ducthanhpr",
+    password: "123"
+  },
+  {
+    username: "quynhham",
+    password: "1234"
+  },
+  {
+    username: "ducquynh",
+    password: "321"
+  }
+];
+var newsFeed = [
+  {
+    username: "aldfjksdfjl",
+    timeline: "So tired form all that learn"
+  },
+  {
+    username: "safkladfsdkfkf",
+    timeline: "Javascript is so coolll"
+  }
+];
+
+var userNamePrompt = prompt("What's your username?");
+var passwordPrompt = prompt("What's your password?");
+
+function isUserVadid (username, password) {
+  for (var i = 0; i < database.length;i++) {
+    if (username === database[i].username && password === database[i].password) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function signIn (username, password) {
+  
+  // console.log();
+  
+  if (isUserVadid(username, password)) {
+    console.log(newsFeed);
+  }
+  else {
+    alert ("Sorry, wrong username and password");
+  }
+}
+signIn(userNamePrompt, passwordPrompt);
