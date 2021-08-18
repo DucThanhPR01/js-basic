@@ -161,52 +161,56 @@ console.log(double);
 // todos.forEach(logToDos);
 // todosimportant.forEach(logToDos);
 
-var database = [
-  {
-    username: "ducthanhpr",
-    password: "123"
-  },
-  {
-    username: "quynhham",
-    password: "1234"
-  },
-  {
-    username: "ducquynh",
-    password: "321"
-  }
-];
-var newsFeed = [
-  {
-    username: "aldfjksdfjl",
-    timeline: "So tired form all that learn"
-  },
-  {
-    username: "safkladfsdkfkf",
-    timeline: "Javascript is so coolll"
-  }
-];
 
-var userNamePrompt = prompt("What's your username?");
-var passwordPrompt = prompt("What's your password?");
+//Built Facebook pass version 2
+// var database = [
+//   {
+//     username: "ducthanhpr",
+//     password: "123"
+//   },
+//   {
+//     username: "quynhham",
+//     password: "1234"
+//   },
+//   {
+//     username: "ducquynh",
+//     password: "321"
+//   }
+// ];
+// var newsFeed = [
+//   {
+//     username: "aldfjksdfjl",
+//     timeline: "So tired form all that learn"
+//   },
+//   {
+//     username: "safkladfsdkfkf",
+//     timeline: "Javascript is so coolll"
+//   }
+// ];
 
-function isUserVadid (username, password) {
-  for (var i = 0; i < database.length;i++) {
-    if (username === database[i].username && password === database[i].password) {
-      return true;
-    }
-  }
-  return false;
-}
+// var userNamePrompt = prompt("What's your username?");
+// var passwordPrompt = prompt("What's your password?");
 
-function signIn (username, password) {
+// function isUserVadid (username, password) {
+//   for (var i = 0; i < database.length;i++) {
+//     if (username === database[i].username && password === database[i].password) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// function signIn (username, password) {
   
-  // console.log();
+//   // console.log();
   
-  if (isUserVadid(username, password)) {
-    console.log(newsFeed);
-  }
-  else {
-    alert ("Sorry, wrong username and password");
-  }
-}
-signIn(userNamePrompt, passwordPrompt);
+//   if (isUserVadid(username, password)) {
+//     console.log(newsFeed);
+//   }
+//   else {
+//     alert ("Sorry, wrong username and password");
+//   }
+// }
+// signIn(userNamePrompt, passwordPrompt);
+
+var change = document.getElementsByClassName("h1");
